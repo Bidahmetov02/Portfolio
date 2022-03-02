@@ -1,10 +1,15 @@
 import { ListItem } from "@material-ui/core";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss"
+import {
+  featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio,
+  contentPortfolio,
+} from "../../data"
 
 export default function Portfolio() {
   const [selected, setSelected] = useState('featured');
+  const [data, setData] = useState([]);
   const list = [
     {
       id: "featured",
@@ -28,6 +33,28 @@ export default function Portfolio() {
     },
   ];
 
+  useEffect(() => {
+    switch(selected) {
+      case "feautured":
+        setData(featuredPortfolio)
+        break
+      case "web":
+        setData(webPortfolio)
+        break
+      case "mobile":
+        setData(mobilePortfolio)
+        break
+      case "design":
+        setData(designPortfolio)
+        break
+      case "content":
+        setData(contentPortfolio)
+        break
+      default:
+        setData(featuredPortfolio)
+    }
+  }, [selected])
+
   return (
     <div className='portfolio' id="portfolio">
       <h1>Portfolio</h1>
@@ -39,25 +66,12 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="https://figmatemplate.com/wp-content/uploads/2020/04/Mobile-Banking-App-Figma.jpg" alt="" />
-          <h3>Banking App</h3>
-        </div><div className="item">
-          <img src="https://figmatemplate.com/wp-content/uploads/2020/04/Mobile-Banking-App-Figma.jpg" alt="" />
-          <h3>Banking App</h3>
-        </div><div className="item">
-          <img src="https://figmatemplate.com/wp-content/uploads/2020/04/Mobile-Banking-App-Figma.jpg" alt="" />
-          <h3>Banking App</h3>
-        </div><div className="item">
-          <img src="https://figmatemplate.com/wp-content/uploads/2020/04/Mobile-Banking-App-Figma.jpg" alt="" />
-          <h3>Banking App</h3>
-        </div><div className="item">
-          <img src="https://figmatemplate.com/wp-content/uploads/2020/04/Mobile-Banking-App-Figma.jpg" alt="" />
-          <h3>Banking App</h3>
-        </div><div className="item">
-          <img src="https://figmatemplate.com/wp-content/uploads/2020/04/Mobile-Banking-App-Figma.jpg" alt="" />
-          <h3>Banking App</h3>
-        </div>
+        {data.map(i => (
+          <div className="item">
+            <img src={i.img} alt="" />
+            <h3>{i.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   )
