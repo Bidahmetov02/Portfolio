@@ -1,6 +1,6 @@
 import Topbar from "./components/topbar/Topbar";
 import Portfolio from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
+import Education from "./components/education/Education";
 import Intro from "./components/intro/Intro";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
@@ -17,7 +17,7 @@ function App() {
       <div className="sections">
         <Intro/>
         <Portfolio/>
-        <Works/>
+        <Education/>
         <Contact/>
       </div>
     </div>

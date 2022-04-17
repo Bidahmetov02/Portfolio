@@ -1,0 +1,91 @@
+@import "../../global.scss";
+
+.education {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    ul {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+
+        li {
+            font-size: 22px !important;
+            //margin-right: 50px;
+            padding: 7px;
+            border-radius: 10px;
+            cursor: pointer;
+            
+            &.active {
+                background-color: $mainColor;
+                color: white;
+            }
+        }
+    }
+
+    .innerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .container {
+        margin-top: 20px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px -8px black;
+            display: flex;
+            padding: 20px;
+            background-color: white;
+            transition: all 1s ease;
+        }
+
+        .uniCard {
+            width: 350px;
+            height: 90%;
+
+            img {
+                width: 100px;
+                margin: 0 auto;
+            }
+        }
+
+        .certCard {
+            width: 250px;
+            height: 90%;
+
+            h3 {
+                text-align: center;
+            }
+
+            h3, h4, p, a {
+                margin: 20px 0;
+                color: inherit;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

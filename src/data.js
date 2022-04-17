@@ -186,3 +186,38 @@ export const featuredPortfolio = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     },
   ];
+
+  export const educationData = [
+    {
+      id: 1,
+      title: "University of Information Technology and Managment in Rzeszow",
+      degree: "Bachelors",
+      startDate: "October 2020",
+      endDate: "October 2023",
+      major: "IT/Programming",
+    },
+  ]
+
+  export const certificates = [
+    {
+      id: 1,
+      organisation: "Coursera",
+      title: "Django for Everybody Sepecialisation",
+      issueDate: "December 2020",
+      link: "https://www.coursera.org/account/accomplishments/specialization/UL27N8CCW7QF",
+    },
+    {
+      id: 2,
+      organisation: "Cisco Networking Academy",
+      title: "CCNAv7 Introduction to Networks",
+      issueDate: "March 2021",
+      link: "https://www.credly.com/badges/b0c80a6e-4234-4674-abce-234022930f7e/public_url",
+    },
+    {
+      id: 3,
+      organisation: "Cisco Networking Academy",
+      title: "NDG Linux Essentials",
+      issueDate: "March 2022",
+      link: "https://drive.google.com/file/d/1IuPkcsLfGpMR6q9RLOFY31g1qPbOCHEn/view?usp=sharing",
+    },
+  ]
