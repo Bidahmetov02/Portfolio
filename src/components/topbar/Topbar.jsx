@@ -15,6 +15,9 @@ export default function topbar({menuOpen, SetMenuOpen}) {
               <Mail className="icon" />
               <span>bidahmetov2002@gmail.com</span>
             </div>
+            <div className="itemContainer">
+              <span><a target="_blank" href="https://drive.google.com/file/d/1MO0AhRIKzHA7O_0Vqs71wEf9JGTtGLPt/view?usp=sharing">Resume</a></span>
+            </div>
           </div>
           <div className="right">
             <div className="hamburger" onClick={() => SetMenuOpen(!menuOpen)}>
