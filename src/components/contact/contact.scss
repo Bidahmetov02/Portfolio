@@ -17,7 +17,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
 
         h2 {
             font-size: 30px;
@@ -64,6 +63,18 @@
                 &:hover {
                     background-color: rgb(137, 7, 33);
                 }
+            }
+
+            span {
+                font-size: 18px;
+            }
+
+            .valid {
+                color: green;
+            }
+
+            .notValid {
+                color: red;
             }
         }
     }
