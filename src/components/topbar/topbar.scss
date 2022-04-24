@@ -8,13 +8,14 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    transition: all 1s ease;
+    transition: all 2s ease;
 
     .wrapper {
         padding: 10px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        //transition: all 3s ease;
 
         .left {
             display: flex;
@@ -24,8 +25,9 @@
                 font-size: 40px;
                 font-weight: 700;
                 text-decoration: none;
-                color: inherit;
+                color: #15023a;
                 margin-right: 40px;
+                transition: all 3s ease;
             }
 
             .itemContainer {
@@ -43,7 +45,8 @@
                     font-weight: 500;
 
                     a {
-                        color: inherit;
+                        color: #15023a;
+                        transition: all 3s ease;
                     }
                 }
             }
@@ -73,6 +76,13 @@
     &.active {
         background-color: $mainColor;
         color: white;
+
+        span a {
+            color: white;
+        }
+        .left a {
+            color: white !important;
+        }
 
         .hamburger {
             span {
