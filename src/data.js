@@ -1,56 +1,53 @@
-export const featuredPortfolio = [
+export const Django = [
     {
       id: 1,
       title: "Social Media App",
       img:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
       description: "Django based web-application similar to Twitter SemanticUI was used on the front-end. The database is the default Django database(sqlite3). I used AJAX to provide a good user experience.",
-      guthub: "https://github.com/Bidahmetov02/Portfolio",
-      link: "https://instagram.com"
-    },
-    {
-      id: 2,
-      title: "Rampa UI Design",
-      img:
-        "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
-      description: "Django based web-application similar to Twitter SemanticUI was used on the front-end. The database is the default Django database(sqlite3). I used AJAX to provide a good user experience.",
-      guthub: "https://github.com/Bidahmetov02/Portfolio",
+      guthub: "https://github.com/Bidahmetov02/django_social_net",
       link: ""
     },
     {
-      id: 3,
-      title: "E-commerce Web Design",
+      id: 2,
+      title: "REST API",
       img:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-      description: "Django based web-application similar to Twitter   SemanticUI was used on the front-end. The database is the default Django database(sqlite3). I used AJAX to provide a good user experience.",
-      guthub: "https://github.com/Bidahmetov02/Portfolio",
-      link: "https://instagram.com"
+        "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+      description: "REST API for the Web application called ITBilim created in Django Rest Framework. Authentication implemented using Token Authentication (JWT). Fron-End is built using React JS.",
+      guthub: "#",
+      link: "#"
     },
   ];
   
-  export const webPortfolio = [
+  export const ASPNET = [
     {
       id: 1,
-      title: "Web Social Media App",
+      title: "Job Posting Web App",
       img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-      description: "Django based web-application similar to Twitter SemanticUI was used on the front-end. The database is the default Django database(sqlite3). I used AJAX to provide a good user experience.",
-      guthub: "https://github.com/Bidahmetov02/Portfolio",
-      link: "https://instagram.com"
-    },
-    {
-      id: 2,
-      title: "Web Rampa UI Design",
-      img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
-      description: "Django based web-application similar to Twitter SemanticUI was used on the front-end. The database is the default Django database(sqlite3). I used AJAX to provide a good user experience.",
-      guthub: "https://github.com/Bidahmetov02/Portfolio",
+      description: "Group project of 2 developers. Backend is implemented using ASP .NET WEB API. Fronend is writted in Angular. Project is managed using AzureDevops and hosted on Microsoft Azure.",
+      guthub: "#",
       link: ""
     },
+  ];
+
+  export const React = [
     {
-      id: 3,
-      title: "Web E-commerce Design",
-      img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
-      description: "Django based web-application similar to Twitter SemanticUI was used on the front-end. The database is the default Django database(sqlite3). I used AJAX to provide a good user experience.",
-      guthub: "https://github.com/Bidahmetov02/Portfolio",
+      id: 1,
+      title: "Pokedex",
+      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      description: "Front-end Application created for learning purposes. For the data I used pokemon api.",
+      guthub: "https://github.com/Bidahmetov02/Pokedex",
+      link: ""
+    },
+  ];
+
+  export const Bots = [
+    {
+      id: 1,
+      title: "Currency Exchange Bot",
+      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      description: "Telegram chat-bot is made in Python using library Aiogram. For the hosting I used heroku.com. Anyone can use it to see relevant exchange rates and convert. Just search for AkshaAustyrgysBot",
+      guthub: "https://github.com/Bidahmetov02/Pokedex",
       link: ""
     },
   ];

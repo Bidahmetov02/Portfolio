@@ -5,6 +5,7 @@
     .left {
         flex: 0.5;
         overflow: hidden;
+        position: relative;
 
         .imageContainer {
             width: 800px;
@@ -15,6 +16,34 @@
             align-items: flex-end;
             justify-content: center;
             float: right;
+        }
+
+        button {
+            width: 175px;
+            height: 50px;
+            background-color: crimson;
+            border: none;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 30px;
+            left: 270px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                background-color: rgb(137, 7, 33);
+            }
         }
 
         img {

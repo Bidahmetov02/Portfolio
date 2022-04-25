@@ -3,16 +3,24 @@ import { useState, useEffect } from "react"
 import PortfolioList from "../portfolioList/PortfolioList"
 import "./portfolio.scss"
 import {
-  featuredPortfolio, webPortfolio,
+  Django, ASPNET, React, Bots
 } from "../../data"
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState('web')
+  const [selected, setSelected] = useState('django')
   const [data, setData] = useState([])
   const list = [
     {
-      id: "web",
-      title: "Web Applications",
+      id: "django",
+      title: "Python Django",
+    },
+    {
+      id: "aspnet",
+      title: "ASP .NET",
+    },
+    {
+      id: "react",
+      title: "React",
     },
     {
       id: "bot",
@@ -22,11 +30,17 @@ export default function Portfolio() {
 
   useEffect(() => {
     switch(selected) {
-      case "bot":
-        setData(featuredPortfolio)
+      case "django":
+        setData(Django)
         break
-      case "web":
-        setData(webPortfolio)
+      case "aspnet":
+        setData(ASPNET)
+        break
+      case "react":
+        setData(React)
+        break
+      case "bot":
+        setData(Bots)
         break
     }
   }, [selected])
@@ -51,7 +65,7 @@ export default function Portfolio() {
               <h3>{i.title}</h3>
               <p className="desc">{i.description}</p>
               <div className="link">
-                <a href="">GitHub repository</a>
+                <a target="_blank" href={i.guthub}>GitHub Repository</a>
                 {i.link !== "" ? <a href="">Link to the site</a> : <></>}
               </div>
             </div>

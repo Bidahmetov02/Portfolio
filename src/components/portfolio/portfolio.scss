@@ -43,7 +43,7 @@
                 background-color: whitesmoke;
                 color: black;
 
-                .bottom a {
+                .bottom .link a {
                     color: black;
                 }
             }
@@ -58,10 +58,19 @@
                 justify-content: center;
                 padding: 10px;
 
-                a {
-                    color: white;
-                    text-decoration: none;
-                    margin-right: 5px;
+                .desc {
+                    height: 100px;
+                }
+
+                .link {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a {
+                        color: white;
+                        margin-right: 5px;
+                    }
                 }
             }
 

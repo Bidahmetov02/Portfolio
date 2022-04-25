@@ -20,6 +20,7 @@ export default function Intro() {
         <div className="imageContainer">
           <img src="assets/man.png" alt="" />
         </div>
+        <button><a href="#contact">CONTACT ME ➜</a></button>
       </div>
       <div className="right">
         <div className="wrapper">
