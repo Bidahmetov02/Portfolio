@@ -1,6 +1,11 @@
 @import "../../global.scss";
 
 .portfolio {
+    @include mobile {
+        height: fit-content !important;
+        padding-bottom: 20px;
+    }
+
     background-color: white;
     display: flex;
     align-items: center;
@@ -8,6 +13,10 @@
 
     h1 {
         font-size: 50px;
+
+        @include mobile {
+            font-size: 20px;
+        }
     }
 
     ul {
@@ -15,6 +24,11 @@
         padding: 0;
         list-style: none;
         display: flex;
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     .container {
@@ -72,6 +86,12 @@
                         margin-right: 5px;
                     }
                 }
+
+                @include mobile {
+                    .desc {
+                        height: fit-content;
+                    }
+                }
             }
 
             img {
@@ -85,6 +105,19 @@
             h3 {
                 font-size: 20px;
                 margin: 0;
+            }
+
+            @include mobile {
+                width: 240px;
+                height: fit-content;
+
+                .top {
+                    height: 200px;
+                }
+
+                img {
+                    object-fit: contain;
+                }
             }
 
         }

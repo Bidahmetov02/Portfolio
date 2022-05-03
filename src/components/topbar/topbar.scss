@@ -28,6 +28,10 @@
                 color: #15023a;
                 margin-right: 40px;
                 transition: all 3s ease;
+
+                @include mobile {
+                    font-size: 30px;
+                }
             }
 
             .itemContainer {
@@ -49,6 +53,12 @@
                         transition: all 3s ease;
                     }
                 }
+            }
+
+            @include mobile {
+                .itemContainer {
+                    display: none;
+                }   
             }
         } 
         

@@ -1,11 +1,22 @@
+@import "../../global.scss";
+
 .intro {
     background-color: white;
     display: flex;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left {
         flex: 0.5;
         overflow: hidden;
         position: relative;
+
+        @include mobile {
+            width: 400px;
+        }
 
         .imageContainer {
             width: 800px;
@@ -16,6 +27,12 @@
             align-items: flex-end;
             justify-content: center;
             float: right;
+
+            @include mobile {
+                align-items: flex-start;
+                position: absolute;
+                left: -200px;
+            }
         }
 
         button {
@@ -46,8 +63,18 @@
             }
         }
 
+        @include mobile {
+            button {
+                display: none;
+            }
+        }
+
         img {
             height: 90%;
+
+            @include mobile {
+                height: 50%;
+            }
         }
     }
 
@@ -63,17 +90,36 @@
             flex-direction: column;
             justify-content: center;
 
+            @include mobile {
+                padding-left: 0;
+                align-items: center;
+                justify-content: center;
+            }
+
             h1 {
                 font-size: 60px;
                 margin: 10px 0;
+
+                @include mobile {
+                    font-size: 30px;
+                }
             }
 
             h2 {
                 font-size: 35px;
+
+                @include mobile {
+                    font-size: 25px;
+                }
             }
 
             h3 {
                 font-size: 30px;
+
+                @include mobile {
+                    font-size: 20px;
+                    margin-top: 80px;
+                }
 
                 span {
                     font-size: inherit;
@@ -111,6 +157,12 @@
                     opacity: 0;
                 }
             }
+        }
+
+        @include mobile {
+            a {
+                display: none;
+            }       
         }
     }
 }
