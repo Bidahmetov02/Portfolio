@@ -2,9 +2,8 @@ export const Django = [
     {
       id: 1,
       title: "Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-      description: "Django based web-application similar to Twitter SemanticUI was used on the front-end. The database is the default Django database(sqlite3). I used AJAX to provide a good user experience.",
+      img: "assets/BekaSTagram.png",
+      description: "Django based web-application similar to Twitter. SemanticUI was used on the front-end. The database is the default Django database(sqlite3). I used AJAX to provide a good user experience.",
       guthub: "https://github.com/Bidahmetov02/django_social_net",
       link: ""
     },
@@ -13,7 +12,7 @@ export const Django = [
       title: "REST API",
       img:
         "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
-      description: "REST API for the Web application called ITBilim created in Django Rest Framework. Authentication implemented using Token Authentication (JWT). Fron-End is built using React JS.",
+      description: "REST API for the Web application called ITBilim created in Django Rest Framework. Authentication implemented using Token Authentication (JWT). Front-End is built using React JS.",
       guthub: "#",
       link: "#"
     },
@@ -34,7 +33,7 @@ export const Django = [
     {
       id: 1,
       title: "Pokedex",
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      img: "assets/Pokedex.png",
       description: "Front-end Application created for learning purposes. For the data I used pokemon api.",
       guthub: "https://github.com/Bidahmetov02/Pokedex",
       link: ""
@@ -45,7 +44,7 @@ export const Django = [
     {
       id: 1,
       title: "Currency Exchange Bot",
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      img: "assets/CurrencyExchangeBot.png",
       description: "Telegram chat-bot is made in Python using library Aiogram. For the hosting I used heroku.com. Anyone can use it to see relevant exchange rates and convert. Just search for AkshaAustyrgysBot",
       guthub: "https://github.com/Bidahmetov02/Pokedex",
       link: ""
